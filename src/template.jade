@@ -1,83 +1,82 @@
 mixin fieldbox (name, fields)
-    h3= name
-    .data-box.mui-list--unstyled
-        - each field in fields
-            li 
-                i(class="fa fa-" + field.icon)
-                != " " + field.value
+  h3= name
+  .data-box.mui-list--unstyled
+    - each field in fields
+      li 
+        i(class="fa fa-" + field.icon)
+        != " " + field.value
 
 mixin procentbox (name, values)
-    h3= name 
-    .data.box.mui-list--unstyled
-        - each ob in values
-            li 
-                h4!= ob.name 
-                .progress
-                    .internal(
-                        style = "width: " + ob.value + "%"
-                    )
+  h3= name 
+  .data.box.mui-list--unstyled
+    - each ob in values
+      li 
+        h4!= ob.name 
+        .progress
+          .internal(
+            style = "width: " + ob.value + "%"
+          )
 
 doctype html
 html(lang="en")
-    head
-        title Curriculum Vitae
-        link(rel="stylesheet", type="text/css", href="css/main.css")
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-    body
-        .mui-container
-            .mui-appbar.mui--z2
-                h1= name
-            .mui-row.mui--clearfix
-                .central.mui-col-md-8
-                    .mui-panel.mui--z2
-                        p= profile
-                    .mui-panel.mui--z2
-                        .mui--text-headline
-                            h2
-                                = " Experiencia"
+  head
+    title Curriculum Vitae
+    link(rel="stylesheet", type="text/css", href="css/main.css")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    .mui-container
+      .mui-appbar.mui--z2
+        h1= name
+      .mui-row.mui--clearfix
+        .central.mui-col-md-8
+          .mui-panel.mui--z2
+            p= profile
+          .mui-panel.mui--z2
+            .mui--text-headline
+              h2
+                = " Experiencia"
 
-                        // Jobs
-                        - each job in jobs
-                            .job
-                                .muy--text-headline
-                                    h3 
-                                        i.fa.fa-briefcase
-                                        = " " + job.title
-                                        = " - " + job.rol
-                                .mui--text-black-54
-                                    .muy.row 
-                                        .mui-col-md-4
-                                            span= job.when 
-                                        .technologies.mui-col-md-8
-                                            ul.mui-list--inline.mui--pull-right
-                                                each tech in job.technologies
-                                                    li= tech
-                                p= job.description
-                                .mui-divider
+            // Jobs
+            - each job in jobs
+              .job
+                .muy--text-headline
+                  h3 
+                    i.fa.fa-briefcase
+                    = " " + job.title
+                    = " - " + job.rol
+                .mui--text-black-54
+                  .muy.row 
+                    .mui-col-md-4
+                      span= job.when 
+                    .technologies.mui-col-md-8
+                      ul.mui-list--inline.mui--pull-right
+                        each tech in job.technologies
+                          li= tech
+                p= job.description
+                .mui-divider
 
-                .mui-col-md-4
-                    .mui-panel.mui--z2
-                        +fieldbox("Información útil", info)
+        .mui-col-md-4
+          .mui-panel.mui--z2
+            +fieldbox("Información útil", info)
 
-                    .mui-panel.mui--z2
-                        +fieldbox("Información de contacto", contact)
+          .mui-panel.mui--z2
+            +fieldbox("Información de contacto", contact)
 
-                    .mui-panel.mui--z2
-                        +fieldbox("Solcial media", social)
+          .mui-panel.mui--z2
+            +fieldbox("Solcial media", social)
 
-                    .mui-panel.mui--z2
-                        +procentbox("Idiomas", languajes)
-        
-                    .mui-panel.mui--z2
-                        +procentbox("Tecnologías", technologies)
+          .mui-panel.mui--z2
+            +procentbox("Idiomas", languajes)
+    
+          .mui-panel.mui--z2
+            +procentbox("Tecnologías", technologies)
 
-        footer
-            .mui-container.mui--text-center
-                span Este CV es privado, no publique esta información
-                .mui--pull-right
-                    i.fa.fa-github
-                    a(href="")= " exos/cvgen"
-        script(src="js/main.js")
-
+    footer
+      .mui-container.mui--text-center
+        span Este CV es privado, no publique esta información
+        .mui--pull-right
+          i.fa.fa-github
+          a(href="")= " exos/cvgen"
+    script(src="js/main.js")
