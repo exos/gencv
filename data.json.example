@@ -1,0 +1,113 @@
+{
+    "name": "Fulanito Perez",
+    "profile": "Me dedico a programar en node.js",
+
+    "info": [
+        {
+            "icon": "calendar",
+            "value": "2 de febrero de 1985"
+        }
+    ],
+
+    "contact": [
+        {
+            "icon": "home",
+            "value": "Avenidad Simpre Viva 742, Springfield"
+        },
+        {
+            "icon": "phone",
+            "value": "<strike>[+1 32]</strike> 332-1232"
+        },
+        {
+            "icon": "envelope",
+            "value": "fulanito@gmail.com"
+        },
+        {
+            "icon": "link",
+            "value": "<strike>http://</strike>fulanito.com"
+        }
+    ],
+
+    "social": [
+        {
+            "icon": "github",
+            "value": "<strike>http://</strike>github.com/exos"
+        },
+        {
+            "icon": "twitter",
+            "value": "@fulanito"
+        },
+        {
+            "icon": "linkedin",
+            "value": "im/fulanito"
+        },
+        {
+            "icon": "comments-o",
+            "value": "@fulanito <strike>(Telegram)</strike>"
+        }
+    ],
+
+    "technologies": [
+        {
+            "name": "JavaScript",
+            "value": 100
+        },
+        {
+            "name": "Node.js",
+            "value": 100
+        },
+        {
+            "name": "PHP",
+            "value": 100
+        },
+        {
+            "name": "Python",
+            "value": 70
+        },
+        {
+            "name": "Ruby",
+            "value": 40
+        },
+        {
+            "name": "SQL",
+            "value": 80
+        },
+        {
+            "name": "Bash",
+            "value": 70
+        },
+        {
+            "name": "C",
+            "value": 30
+        }
+    ],
+
+    "languajes": [
+        {
+            "name": "Español <strike>(Nativo)</strike>",
+            "value": 100
+        },
+        {
+            "name": "Inglés",
+            "value": 44
+        }
+    ],
+
+    "jobs": [
+        {
+            "title": "Google",
+            "rol": "Desarrollo",
+            "when": "Feb 2009 - Dic 2015",
+            "description": "Desarrollo de aplicaciones mobile para android.",
+            "technologies": ["Java", "Android"]
+        },
+        {
+            "title": "Enron",
+            "rol": "Contador",
+            "when": "Feb 2000 - Dic 2001",
+            "description": "Manejaba la contabilidad",
+            "technologies": ["Node.js", "BigData", "AWS", "Redis", "Debian/Linux"]
+        }
+    ]
+
+}

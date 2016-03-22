@@ -1,0 +1,24 @@
+{
+  "name": "cvgen",
+  "version": "0.1.0",
+  "description": "Generador de C.V.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gencv": "./node_modules/.bin/gulp build",
+    "genpdf": "./node_modules/.bin/gulp genpsf"
+  },
+  "author": "Oscar Gentilezza <oscar@gentisoft.com>",
+  "license": "WTFPL",
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-html-pdf": "^0.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "muicss": "^0.4.7"
+  }
+}

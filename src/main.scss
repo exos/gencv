@@ -1,0 +1,53 @@
+
+$fonts-path: "../fonts";
+$fa-font-path: $fonts-path;
+
+@import '../node_modules/muicss/lib/sass/mui/colors.scss';
+
+$mui-primary-color:       mui-color('green', '500');
+$mui-primary-color-dark:  mui-color('green', '700');
+$mui-primary-color-light: mui-color('green', '100');
+
+$mui-accent-color:        mui-color('green', '500');
+$mui-accent-color-dark:   mui-color('green', '100');
+$mui-accent-color-light:  mui-color('green', '300');
+
+@import '../node_modules/muicss/lib/sass/mui';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+$mui-screen-md-min: '400px';
+
+.mui-appbar {
+    margin-bottom: 30px;
+}
+
+.mui-panel {
+
+    strike {
+        text-decoration: none;
+        font-style: normal;
+        color: $mui-text-dark-secondary;
+    }
+
+}
+
+.job {
+    padding-left: 40px;
+
+    .technologies {
+        color: $mui-text-dark-secondary;
+    }
+
+}
+
+.progress {
+
+    height: 10px;
+    background-color: $mui-accent-color-dark;
+
+    .internal {
+        height: 100%;
+        background-color: $mui-accent-color
+    }
+
+}
