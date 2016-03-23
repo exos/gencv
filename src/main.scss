@@ -38,6 +38,16 @@ $mui-screen-md-min: '400px';
         color: $mui-text-dark-secondary;
     }
 
+
+    .job-data {
+        margin-left: 28px;
+
+        .job-meta {
+            font-size: 12px;
+        }
+
+    }
+
 }
 
 .progress {
@@ -51,3 +61,6 @@ $mui-screen-md-min: '400px';
     }
 
 }
+
+// Set print options
+@import './print';

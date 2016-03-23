@@ -1,11 +1,11 @@
 {
-  "name": "cvgen",
+  "name": "gencv",
   "version": "0.1.0",
   "description": "Generador de C.V.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gencv": "./node_modules/.bin/gulp build",
-    "genpdf": "./node_modules/.bin/gulp genpsf"
+    "genpdf": "./node_modules/.bin/gulp genpdf"
   },
   "author": "Oscar Gentilezza <oscar@gentisoft.com>",
   "license": "WTFPL",

@@ -18,7 +18,7 @@ mixin procentbox (name, values)
           )
 
 doctype html
-html(lang="en")
+html(lang="es", moznomarginboxes, mozdisallowselectionprint)
   head
     title Curriculum Vitae
     link(rel="stylesheet", type="text/css", href="css/main.css")
@@ -46,15 +46,17 @@ html(lang="en")
                     i.fa.fa-briefcase
                     = " " + job.title
                     = " - " + job.rol
-                .mui--text-black-54
-                  .muy.row 
+                .job-data.mui--text-black-54
+                  .job-meta.mui-row
                     .mui-col-md-4
                       span= job.when 
                     .technologies.mui-col-md-8
                       ul.mui-list--inline.mui--pull-right
                         each tech in job.technologies
                           li= tech
-                p= job.description
+                  .mui-row.mui--clearfix
+                    .mui-col-md-12
+                      p= job.description
                 .mui-divider
 
         .mui-col-md-4
@@ -78,5 +80,5 @@ html(lang="en")
         span Este CV es privado, no publique esta información
         .mui--pull-right
           i.fa.fa-github
-          a(href="")= " exos/cvgen"
+          a(href="https://github.com/exos/gencv")= " exos/gencv"
     script(src="js/main.js")

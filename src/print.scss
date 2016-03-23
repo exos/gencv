@@ -1,0 +1,65 @@
+@media print {
+
+    // Set collorfull on print
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+
+    // Ajust to width
+    body, page, document {
+        padding:0;
+        margin:0;
+        width: 100% !important;
+    } 
+
+    // Remove links icons (added by chrome)
+    a[href]:after {
+        content: none !important;
+    }
+
+    // Remove underslash to links
+    a {
+      font-weight: bolder;
+      text-decoration: none;
+    }
+
+    // Transform external by url
+    a[href^=http]:after {
+        content: attr(href);
+    }
+
+    // Remove icons added to the image
+    a:after > img {
+        content: "";
+    }  
+
+    // Set page pargins, for letter
+    @page { margin: 12.5mm 10.5mm 11mm 10.5mm; }
+
+    // Override mui elements
+    .mui-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow: visible;
+    }
+
+    .mui-row {
+        display: block;
+        width: 100%;
+    }
+
+    .mui-row > div {
+        display: inline-block;
+    }
+
+    .mui-container > .mui-col-md-4 {
+        width: 33% !important;
+        float: right;
+    }
+
+    .mui-container > .mui-col-md-8 {
+        width: 66% !important;
+    }
+
+}
