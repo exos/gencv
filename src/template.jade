@@ -17,6 +17,11 @@ mixin procentbox (name, values)
             style = "width: " + ob.value + "%"
           )
 
+mixin textbox (name, text)
+  h3= name
+  .data-box
+    p!=text.replace(/[\n\r]/g, "<br />")
+
 doctype html
 html(lang="es", moznomarginboxes, mozdisallowselectionprint)
   head
@@ -32,6 +37,9 @@ html(lang="es", moznomarginboxes, mozdisallowselectionprint)
       .mui-row.mui--clearfix
         .central.mui-col-md-8
           .mui-panel.mui--z2
+            .mui--text-headline
+              h2
+                = "Bio"
             p= profile
           .mui-panel.mui--z2
             .mui--text-headline
@@ -60,6 +68,12 @@ html(lang="es", moznomarginboxes, mozdisallowselectionprint)
                 .mui-divider
 
         .mui-col-md-4
+
+          if thumb
+            .mui-panel.mui--z2
+              .data-box.thumb-box
+                img(src=thumb)
+
           .mui-panel.mui--z2
             +fieldbox("Información útil", info)
 
@@ -74,6 +88,10 @@ html(lang="es", moznomarginboxes, mozdisallowselectionprint)
     
           .mui-panel.mui--z2
             +procentbox("Tecnologías", technologies)
+
+          if geekcode
+            .mui-panel.mui--z2
+              +textbox("Geek code", geekcode)
 
     footer
       .mui-container.mui--text-center

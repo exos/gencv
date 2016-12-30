@@ -62,5 +62,14 @@ $mui-screen-md-min: '400px';
 
 }
 
+.thumb-box {
+    text-align: center;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
 // Set print options
 @import './print';
